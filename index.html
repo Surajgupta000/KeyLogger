@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Logger</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+        }
+        #log, #state {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 20px;
+            background: orange;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-right: 20px;
+        }
+        h1 {
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Key Logger</h1>
+        <p>Start your fun way here...</p>
+        
+        <!-- Buttons for starting and stopping logging -->
+        <div class="btn-container">
+            <button id="start-btn">Start logging keypresses</button>
+            <button id="stop-btn" disabled>Stop logging keypresses</button>
+        </div>
+
+        <!-- Display log and state -->
+        <div id="log"></div>
+        <div id="state"></div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
